@@ -1,6 +1,9 @@
 .navbar-lewagon {
   justify-content: space-around;
   background: transparent;
+  font-family: "Poiret One", "Open Sans Condensed", "sans-serif";
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -9,4 +12,19 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 400px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: $light-gray;
+}
+
+.navbar-lewagon li {
+  list-style-type: none;
+}
+
+.navbar-lewagon a {
+  color: $light-gray;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
