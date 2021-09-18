@@ -24,7 +24,9 @@ gem 'jbuilder', '~> 2.7'
 gem 'devise'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
-
+source 'https://rails-assets.org' do
+  gem 'rails-assets-particles.js'
+end
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 

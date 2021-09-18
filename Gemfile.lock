@@ -1,4 +1,9 @@
 GEM
+  remote: https://rails-assets.org/
+  specs:
+    rails-assets-particles.js (2.0.0)
+
+GEM
   remote: https://rubygems.org/
   specs:
     actioncable (6.0.4.1)
@@ -244,6 +249,7 @@ DEPENDENCIES
   pry-rails
   puma (~> 4.1)
   rails (~> 6.0.4, >= 6.0.4.1)
+  rails-assets-particles.js!
   sass-rails (>= 6)
   selenium-webdriver
   simple_form
