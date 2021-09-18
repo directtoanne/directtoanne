@@ -87,7 +87,7 @@ document.addEventListener('turbolinks:load', () => {
       },
       "move": {
         "enable": true,
-        "speed": 0.3,
+        "speed": 0.2,
         "direction": "none",
         "random": true,
         "straight": false,
