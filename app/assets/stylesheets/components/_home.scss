@@ -6,3 +6,17 @@
 .test-again {
   background-color: $night;
 }
+
+.profile-image {
+  height: 280px;
+  border: 4px $gray solid;
+  border-radius: 28px;
+}
+
+.container h1 {
+  background-color: rgba(0,1,26,0.8);
+}
+
+.container p {
+  background-color: rgb(0,1,26);
+}
