@@ -13,7 +13,7 @@
   border-radius: 50%;
 }
 
-.container h1 {
+.container h1, h2, h5 {
   background-color: rgba(0,1,26,0.8);
 }
 
@@ -68,15 +68,13 @@
 }
 
 .text {
-  color: white;
-  font-size: 20px;
+  color: $light-gray;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  text-align: center;
 }
 
 .speech-card {
