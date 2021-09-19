@@ -8,9 +8,9 @@
 }
 
 .profile-image {
-  height: 280px;
+  width: 24vw;
   border: 4px $gray solid;
-  border-radius: 28px;
+  border-radius: 50%;
 }
 
 .container h1 {
@@ -31,4 +31,20 @@
 
 .transparent {
   color: transparent;
+}
+
+.project-card {
+  width: 620px;
+  border: 3px solid $gray;
+  border-radius: 2px;
+  padding-top: 16px;
+  margin-top: 16px;
+}
+
+.project-grid {
+  width: 86vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  background-color: transparent;
 }
