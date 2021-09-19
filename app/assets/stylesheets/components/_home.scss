@@ -37,8 +37,7 @@
   width: 620px;
   border: 3px solid $gray;
   border-radius: 2px;
-  padding-top: 16px;
-  margin-top: 16px;
+  margin-top: 32px;
 }
 
 .project-grid {
@@ -47,4 +46,35 @@
   grid-template-columns: 1fr 1fr;
   margin: auto;
   background-color: transparent;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 90%;
+  width: 100%;
+  opacity: 0;
+  transition: .25s ease;
+  background-color: rgba(0,1,26,0.75);
+}
+
+.project-hover {
+  position: relative;
+}
+
+.project-hover:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
