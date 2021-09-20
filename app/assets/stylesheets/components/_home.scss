@@ -67,6 +67,23 @@
   opacity: 1;
 }
 
+.overlayed-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .25s;
+}
+.image-overlay {
+  position: relative;
+}
+
+.image-overlay:hover .overlayed-image {
+  opacity: 1;
+}
+
 .text {
   color: $light-gray;
   position: absolute;
@@ -79,4 +96,32 @@
 
 .speech-card {
   width: 22vw;
+}
+
+.card {
+  background-color: transparent;
+}
+
+.card button {
+  color: #F7E565;
+  font-size: 32px;
+}
+
+.card button:hover {
+  color: orchid;
+  text-decoration: none;
+}
+
+.card button:focus {
+  color: orchid;
+  text-decoration: none;
+}
+
+.anne-links a {
+  color: #F7E565;
+}
+
+.anne-links a:hover {
+  color: orchid;
+  transition: 0.25s;
 }
