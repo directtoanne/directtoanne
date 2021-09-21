@@ -1,0 +1,8 @@
+<div class="container d-flex">
+  <%= @rec.title %>
+  <%= @rec.synopsis %>
+  <%= @rec.why %>
+  <% if @rec.photo.attached? %>
+    <%= cl_image_tag @rec.photo.key, height: 231, width: 156, crop: :fill %>
+  <% end %>
+</div>

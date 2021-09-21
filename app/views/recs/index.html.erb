@@ -1,0 +1,9 @@
+<div class="container d-flex flex-wrap justify-content-around">
+  <% @recs.each do |rec| %>
+    <%= link_to rec_path(rec) do %>
+      <% if rec.photo.attached? %>
+        <%= cl_image_tag rec.photo.key, height: 231, width: 156, crop: :fill %>
+      <% end %>
+    <% end %>
+  <% end %>
+</div>
