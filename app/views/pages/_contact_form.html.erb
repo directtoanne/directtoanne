@@ -1,1 +1,10 @@
-<h5>To add in a contact form</h5>
+<br>
+<%= simple_form_for @form do |f| %>
+  <div class="d-flex">
+    <%= f.input :first_name %>
+    <%= f.input :last_name %>
+  </div>
+  <%= f.input :email %>
+  <%= f.input :message %>
+  <%= f.button :submit %>
+<% end %>

@@ -109,4 +109,10 @@ Rails.application.configure do
   # config.active_record.database_selector = { delay: 2.seconds }
   # config.active_record.database_resolver = ActiveRecord::Middleware::DatabaseSelector::Resolver
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
+  Rails.application.configure do
+
+    config.action_mailer.delivery_method = :smtp
+    config.action_mailer.default_url_options = { host: "yourapp.herokuapp.com" }
+    # or your custom domain name eg. "www.yourdomain.com"
+  end
 end
