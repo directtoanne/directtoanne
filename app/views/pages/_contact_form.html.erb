@@ -1,10 +1,16 @@
 <br>
-<%= simple_form_for @form do |f| %>
-  <div class="d-flex">
-    <%= f.input :first_name %>
-    <%= f.input :last_name %>
-  </div>
-  <%= f.input :email %>
-  <%= f.input :message %>
-  <%= f.button :submit %>
-<% end %>
+<div class="form-box">
+  <%= simple_form_for @form, html: { autocomplete: 'off' } do |f| %>
+    <div class="row">
+      <div class="col">
+        <%= f.input :first_name %>
+      </div>
+      <div class="col">
+        <%= f.input :last_name %>
+      </div>
+    </div>
+    <%= f.input :email %>
+    <%= f.input :message %>
+    <%= f.submit 'Submit' %>
+  <% end %>
+</div>

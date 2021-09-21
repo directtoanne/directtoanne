@@ -6,12 +6,30 @@
   margin-bottom: 20px;
 }
 
+.footer-lewagon {
+  justify-content: space-around;
+  background: transparent;
+  font-family: "Poiret One", "Open Sans Condensed", "sans-serif";
+  font-size: 18px;
+  padding-top: 40px;
+  margin: auto;
+  width: 86vw;
+}
+
+.footer-lewagon p {
+  background-color: rgba(0,1,26,0.8);
+}
+
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
 }
 
 .navbar-lewagon .navbar-brand img {
   width: 400px;
+}
+
+.navbar-lewagon .navbar-brand {
+  cursor: default;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -26,6 +44,7 @@
 
 .navbar-lewagon li {
   list-style-type: none;
+  background-color: rgba(0,1,26,0.8);
 }
 
 .navbar-lewagon a {

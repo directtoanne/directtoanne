@@ -1,0 +1,58 @@
+.form-control {
+  color: $light-gray;
+  transition: none;
+}
+
+label {
+  font-family: "Poiret One";
+  font-size: 1.2rem;
+  background-color: rgba(0,1,26,0.8);
+}
+
+input[type="submit" i] {
+  font-family: "Poiret One";
+  font-size: 1.35rem;
+  border: none !important;
+  padding: 10px;
+  color: #F7E565 !important;
+  border-radius: 25%;
+}
+
+input[type="submit" i]:hover {
+  color: orchid !important;
+  transition: 0.25s;
+}
+
+.form-control input:focus-visible, input:focus {
+  border: none;
+  background-color: rgba(0,1,26,0.8);
+  border-bottom: 1px solid #F7E565;
+  caret-color: #F7E565;
+  outline: none;
+  box-shadow: none;
+  color: $light-gray;
+}
+
+.form-box {
+  width: 50vw;
+}
+
+.form-box input {
+  border: none;
+  background-color: rgba(0,1,26,0.8);
+  border-bottom: 1px solid #F7E565;
+  caret-color: #F7E565;
+  outline: none;
+  box-shadow: none;
+  color: $light-gray;
+}
+
+.form-box input:focus-visible, input:focus {
+  border: none;
+  background-color: rgba(0,1,26,0.8);
+  border-bottom: 1px solid #F7E565;
+  caret-color: #F7E565;
+  outline: none;
+  box-shadow: none;
+  color: $light-gray;
+}
