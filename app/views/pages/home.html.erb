@@ -117,8 +117,8 @@
         </div>
         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
           <div class="card-body">
-            <p>You probably shouldn't. I'm only half-kidding. The truth is that most businesses can get by with a simple Wordpress or Squarespace website, which are easy enough to use that even the most tech-illiterate person can make a legible-enough landing page. There are drag and drop website builders like Wix littered across the web, that sell you on the fact that you too! Can make your own website.</p>
-            <br><p>And there's nothing wrong with that at all.</p>
+            <p>You probably shouldn't. I'm only half-kidding. The truth is that most businesses can get by with a simple Wordpress or Squarespace website, which are easy enough to use that even the tech-illiterate can make a legible-enough landing page. There are drag and drop website builders like Wix littered across the Internet, that sell you on the fact that you too! Can make your own website.</p>
+            <br><div class="d-flex"><p>And there's nothing wrong with that at all.</p></div>
             <br><p>What I absolutely detest, though, is seeing "Wordpress developers" or "Elementor designers" who don't actually know how to code, taking advantage of potential clients who don't know much about what goes into the backend of code, and charging them <em>thousands</em>, even <em>tens of thousands</em> for a website they didn't actually <b>write</b>, they just made use of a drag and drop library to arrange elements in a good-looking-enough package.</p>
             <br>
             <p>The problem is most people running SMEs are so busy/non-tech-savvy that they don't realize they're being overcharged, or worse: they know that they are, but would rather shell out thousands out of convenience. And then those "devs" add on maintenance charges, marketing/advertisement charges, and domain/ssl registration charges that are ten times more expensive than what they should actually cost.</p>
@@ -137,7 +137,7 @@
         </div>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
           <div class="card-body">
-            <p>I don't subscribe to or follow other web devs who like to promise "a site within a week" or provide a 24-hour-static-site-guarantee. The truth is: it really depends. A social media website like Facebook would take longer to code than a blog. An online marketplace like Etsy would take longer to set up, maintain and market than a simple landing page with a booking form for a restaurant.</p><br>
+            <p>I don't subscribe to the advertising strategies other web devs who like to flaunt "a site within a week" promises or provide a 24-hour-static-site-guarantee. The truth is: it really depends. A social media website like Facebook would take longer to code than a blog. An online marketplace like Etsy would take longer to set up, maintain and market than a simple landing page with a booking form for a restaurant.</p><br>
             <p>As a ballpark, this website itself took me around a day to code and host (minus the recommendations tab), but that's because I already knew <em>what</em> I wanted it to look like, and I am also completely complicit with full control over my own brand image. A lot of the length of a project isn't actually spent coding, it's spent brainstorming and deciding the final features/look of the product itself. In other words, if you know <em>exactly</em> what the site should look like from the get go, the process is going to go much faster. Sketches/examples of other websites would also greatly speed up the process.</p>
           </div>
         </div>
@@ -152,9 +152,9 @@
         </div>
         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
           <div class="card-body">
-            <p>Ah, the big question. Once again, it really depends. For a start, domains/hosting/certificates can range from a few bucks to a couple hundred. A domain that ends in '.xyz' or '.net' is probably going to be cheaper to register than one that ends in '.com' or '.co.uk'; similarly, a specific domain like 'anaboutiquelondon.com' would be much cheaper than 'anaboutique.com'.</p><br>
-            <p>Additionally, SSL certification for your website (meaning your site is secure - 'https://' rather than 'http://' - and your browser has the little lock symbol in the top left) has different tiers - a basic SSL certificate is very cheap, but if you plan on authorizing online payments or hosting secure chatrooms, the higher tiers are preferred - if not, necessary.</p><br>
-            <p>There are many more facets similar to this; I won't bore you with the specifics of Google Adwords and search engine optimization, but I will say that the cost for a simple static website should only be a couple hundred at most. Unless you're planning on absolutely buying up the best keywords on search engines and enabling crazy features like full-AI-chatbots (though I couldn't imagine what for, if it's just a normal landing site), a simple website should only go up to a thousand <b>at the most</b>. A medium-length website like a blog, or a multiple-user database would probably cost in the $800 to $2000 range depending on the number of features, and of course, if you want to build the next Twitter I'm assuming you already know you won't get far anywhere without the big bucks.</p>
+            <p>Ah, the big question. Once again, it really depends. For a start, domains/hosting/certificates can vary wildly in price. A domain that ends in '.xyz' or '.net' might cost $2 for a two-year license while its equivalent that ends in '.com' or '.co.uk' may cost up to thousands; similarly, a specific domain like 'anaboutiquelondon.com' would be much cheaper than 'anaboutique.com'.</p><br>
+            <p>Additionally, SSL certification for your website (meaning your site is secure - 'https://' rather than 'http://' - and your browser has the little lock symbol in the top left) has different tiers - a basic SSL certificate is under $10, but if you plan on authorizing online payments or hosting secure chatrooms, the higher tiers are preferred - if not, necessary.</p><br>
+            <p>There are many more facets similar to this; I won't bore you with the specifics of Google Adwords and search engine optimization, but I will say that the cost for a simple static website should only be a couple hundred at most. Unless you're planning on absolutely buying up the best keywords on search engines and enabling crazy features like full-AI-chatbots (though I couldn't imagine what for, if it's just a normal landing site), a simple website should only go up to a thousand <b>at the most</b>.</p>
           </div>
         </div>
       </div>
@@ -163,8 +163,14 @@
 </div>
 
 <br>
-<div class="container mt-3">
+<div class="container mt-2">
   <div class="d-flex">
     <h1>Contact Me:</h1>
+  </div>
+  <div class="d-flex mt-4">
+    <h5>Want to work with me? Are you sure? Fill in the form below and I'll be in touch!</h5>
+  </div>
+  <div id="contact">
+    <%= render 'contact_form' %>
   </div>
 </div>
