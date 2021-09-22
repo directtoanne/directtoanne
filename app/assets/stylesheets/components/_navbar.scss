@@ -55,7 +55,8 @@
   transition: .25s;
 }
 
-.log-in-link a, a:hover {
+.log-in-link a, .log-in-link a:hover, .log-in-link a:visited {
   border: none;
-  cursor: default;
+  cursor: default !important;
+  color: #F7E565;
 }
