@@ -1,0 +1,25 @@
+<div class="container d-flex">
+  <% if rec.photo.attached? %>
+    <%= cl_image_tag rec.photo.key, class: "show-image" %>
+  <% end %>
+  <div class="ml-4 show-rec-card">
+    <div class="d-flex justify-content-between">
+      <div class="mr-4 pr-4">
+        <h1><%= rec.title %></h1>
+        <h6><%= rec.creator %></h6>
+      </div>
+      <div class="ml-4 mt-4 pl-4 text-right">
+        <h6>IMDB: <%= rec.imdb_rating %>/10</h6>
+        <h6>Rotten Tomatoes: <%= rec.rt_rating %>%</h6>
+      </div>
+    </div>
+    <h3 class="mt-4">Synopsis:</h3>
+    <%= rec.synopsis %>
+    <h3 class="mt-4">Why you should give it a shot:</h3>
+    <%= rec.why %>
+    <br><br>
+    <%= link_to edit_rec_path(rec) do %>
+      <button>Edit Rec!</button>
+    <% end %>
+  </div>
+</div>
