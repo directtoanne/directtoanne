@@ -8,7 +8,6 @@
 }
 
 .footer-lewagon {
-  justify-content: space-around;
   background: transparent;
   font-family: "Poiret One", "Open Sans Condensed", "sans-serif";
   font-size: 18px;
@@ -27,10 +26,6 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 400px;
-}
-
-.navbar-lewagon .navbar-brand {
-  cursor: default;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -58,4 +53,9 @@
 .navbar-lewagon a:hover {
   color: orchid;
   transition: .25s;
+}
+
+.log-in-link a, a:hover {
+  border: none;
+  cursor: default;
 }

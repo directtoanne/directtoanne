@@ -1,13 +1,7 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon ml-4 mr-4 pl-4 pr-4">
   
-  <% if user_signed_in? %>
-    <%= link_to destroy_user_session_path, class: "navbar-brand" do %>
-      <%= image_tag "logo-white.png" %>
-    <% end %>
-  <% else %>
-    <%= link_to new_user_session_path, class: "navbar-brand" do %>
-      <%= image_tag "logo-white.png" %>
-    <% end %>
+  <%= link_to root_path, class: "navbar-brand" do %>
+    <%= image_tag "logo-white.png" %>
   <% end %>
   
   <li class="nav-item active">

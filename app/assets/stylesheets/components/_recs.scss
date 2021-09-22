@@ -27,6 +27,15 @@
   color: $gold;
 }
 
+#accordion a, a:visited {
+  color: $gold;
+}
+
+#accordion a:hover {
+  color: orchid;
+  transition: .1s;
+}
+
 .card-overlay a:hover {
   color: orchid;
   transition: .1s;

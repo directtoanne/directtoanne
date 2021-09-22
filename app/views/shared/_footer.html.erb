@@ -1,4 +1,14 @@
 
-<div class="text-right footer-lewagon">
-  <p class="text-right">WEBSITE Ⓒ DIRECTTOANNE 2021</p>
+<div class="text-right footer-lewagon d-flex justify-content-end">
+  <p class="text-right">WEBSITE </p>
+  <% if user_signed_in? %>
+    <%= link_to destroy_user_session_path, method: :delete, class: "log-in-link pl-2 pr-2" do %>
+      <i class="far fa-copyright"></i>
+    <% end %>
+  <% else %>
+    <%= link_to new_user_session_path, class: "log-in-link pl-2 pr-2" do %>
+      <i class="far fa-copyright"></i>
+    <% end %>
+  <% end %>
+  <p> DIRECTTOANNE 2021</p>
 </div>

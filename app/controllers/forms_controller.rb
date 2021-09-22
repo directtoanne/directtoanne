@@ -1,4 +1,6 @@
 class FormsController < ApplicationController
+  skip_before_action :authenticate_user!, only: :create
+  
   def create
     @form = Form.new(form_params)
     if @form.save
