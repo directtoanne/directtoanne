@@ -29,7 +29,7 @@
       <%= f.input :photo, label: "Poster", as: :file %>
     </div>
     <div class="col">
-      <%= f.input :type, collection: @rec.rec_types %>
+      <%= f.input :category, collection: @rec.rec_types %>
     </div>
   </div>
   <%= f.input :tag_list, label: "Genre List", hint: "Add your tags, separated by commas" %>

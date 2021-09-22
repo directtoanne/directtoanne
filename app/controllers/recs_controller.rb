@@ -42,6 +42,6 @@ class RecsController < ApplicationController
   end
 
   def rec_params
-    params.require(:rec).permit(:creator, :synopsis, :title, :why, :imdb_rating, :rt_rating, :release_date, :photo, :link, :duration, :tag_list)
+    params.require(:rec).permit(:creator, :synopsis, :title, :why, :imdb_rating, :rt_rating, :release_date, :photo, :link, :duration, :category, :tag_list)
   end
 end
