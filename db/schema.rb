@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_21_215035) do
+ActiveRecord::Schema.define(version: 2021_09_22_031104) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -47,8 +47,8 @@ ActiveRecord::Schema.define(version: 2021_09_21_215035) do
 
   create_table "recs", force: :cascade do |t|
     t.string "title"
-    t.string "synopsis"
-    t.string "why"
+    t.text "synopsis"
+    t.text "why"
     t.decimal "imdb_rating"
     t.decimal "rt_rating"
     t.string "creator"

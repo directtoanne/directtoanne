@@ -1,4 +1,10 @@
-.form-control {
+.form-control, .form-control:focus {
+  border: none;
+  background-color: rgba(0,1,26,0.8);
+  border-bottom: 1px solid #F7E565;
+  caret-color: #F7E565;
+  outline: none;
+  box-shadow: none;
   color: $light-gray;
   transition: none;
 }
@@ -7,6 +13,16 @@ label {
   font-family: "Poiret One";
   font-size: 1.2rem;
   background-color: rgba(0,1,26,0.8);
+}
+
+textarea.form-control {
+  border: none;
+  background-color: rgba(0,1,26,0.8);
+  border-bottom: 1px solid #F7E565;
+  caret-color: #F7E565;
+  outline: none;
+  box-shadow: none;
+  color: $light-gray;
 }
 
 input[type="submit" i] {

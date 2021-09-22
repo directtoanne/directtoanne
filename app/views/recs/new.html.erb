@@ -2,8 +2,8 @@
   <div class="form-box">
     <%= simple_form_for(@rec) do |f| %>
       <%= f.input :title %>
-      <%= f.input :synopsis %>
-      <%= f.input :why %>
+      <%= f.input :synopsis, :input_html => {:rows => 5} %>
+      <%= f.input :why, :input_html => {:rows => 5} %>
       <%= f.input :creator %>
       <div class="row">
         <div class="col">

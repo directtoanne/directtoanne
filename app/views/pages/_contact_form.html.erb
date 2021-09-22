@@ -10,7 +10,7 @@
       </div>
     </div>
     <%= f.input :email %>
-    <%= f.input :message %>
+    <%= f.input :message, as: :text, :input_html => {:rows => 5} %>
     <%= f.submit 'Submit' %>
   <% end %>
 </div>
