@@ -18,7 +18,7 @@
       <%= f.input :rt_rating, label: "RT Rating" %>
     </div>
     <div class="col">
-      <%= f.input :duration, label: "Duration (s)" %>
+      <%= f.input :duration, label: "Year" %>
     </div>
   </div>
   <div class="row">
@@ -32,6 +32,5 @@
       <%= f.input :category, collection: @rec.rec_types %>
     </div>
   </div>
-  <%= f.input :tag_list, label: "Genre List", hint: "Add your tags, separated by commas" %>
   <%= f.submit 'Submit' %>
 <% end %>

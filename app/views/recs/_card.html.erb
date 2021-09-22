@@ -10,14 +10,20 @@
           <h6><%= rec.creator %></h6>
         </div>
         <div class="ml-4 mt-4 pl-4 text-right">
+          <h6>Year: <%= rec.duration %></h6>
           <h6>IMDB: <%= rec.imdb_rating %>/10</h6>
           <h6>Rotten Tomatoes: <%= rec.rt_rating %>%</h6>
         </div>
       </div>
     <% else %>
-      <div class="mr-4 pr-4">
-        <h1><%= rec.title %></h1>
-        <h6><%= rec.creator %></h6>
+      <div class="d-flex justify-content-between">
+        <div class="mr-4 pr-4">
+          <h1><%= rec.title %></h1>
+          <h6><%= rec.creator %></h6>
+        </div>
+        <div class="ml-4 mt-4 pl-4 text-right">
+          <h6>Year: <%= rec.duration %></h6>
+        </div>
       </div>
     <% end %>
     <h3 class="mt-4">Synopsis:</h3>
