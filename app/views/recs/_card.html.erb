@@ -8,10 +8,17 @@
         <h1><%= rec.title %></h1>
         <h6><%= rec.creator %></h6>
       </div>
-      <div class="ml-4 mt-4 pl-4 text-right">
-        <h6>IMDB: <%= rec.imdb_rating %>/10</h6>
-        <h6>Rotten Tomatoes: <%= rec.rt_rating %>%</h6>
-      </div>
+      <% if ['Show', 'Movie'].include? rec.category? %>
+        <div class="ml-4 mt-4 pl-4 text-right invisible">
+          <h6>IMDB: <%= rec.imdb_rating %>/10</h6>
+          <h6>Rotten Tomatoes: <%= rec.rt_rating %>%</h6>
+        </div>
+      <% else %>
+        <div class="ml-4 mt-4 pl-4 text-right">
+          <h6>IMDB: <%= rec.imdb_rating %>/10</h6>
+          <h6>Rotten Tomatoes: <%= rec.rt_rating %>%</h6>
+        </div>
+      <% end %>
     </div>
     <h3 class="mt-4">Synopsis:</h3>
     <%= rec.synopsis %>
