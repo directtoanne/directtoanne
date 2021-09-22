@@ -50,3 +50,14 @@
 .rec-overlay:hover .card-overlay {
   opacity: 1;
 }
+
+#myTab a, #myTab a:visited {
+  font-family: "Poiret One";
+  color: $gold;
+  font-size: 22px;
+  padding: 18px 34px;
+}
+
+#myTab a:hover, #myTab a:active {
+  color: orchid;
+}
